@@ -12,6 +12,7 @@ int main() {
     }
     int maxCount=0;
     int bestRow=-1;
+    
      for(int i=0;i<m;i++){
         int count=0;
         for(int j=0;j<n;j++){
