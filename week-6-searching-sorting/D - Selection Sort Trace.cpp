@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+   int arr[n];
+   for(int i=0;i<n;i++){
+       cin>>arr[i];
+   }
+   
+   for(int i=0;i<n-1;i++){
+  
+       int min_index=i;
+       
+       for(int j=i;j<n;j++){
+         
+           if(arr[j]<arr[min_index]){
+               min_index=j;
+               
+           }
+       }
+       if(arr[i]>arr[min_index]){
+            swap(arr[i], arr[min_index]);           
+       }
+            cout<<"Pass "<<i+1<<":"<<" ";
+         
+          for(int k=0;k<n;k++){
+                cout<<arr[k]<<" ";
+            }
+                  cout<<", min_selected = "<< arr[i]<<endl; 
+
+   }
+}
