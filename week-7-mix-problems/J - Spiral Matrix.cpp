@@ -28,7 +28,7 @@ int main() {
  
             
             //end row
-            // if(start_row !=end_row){
+
             if(start_row < end_row - 1){
  
             for(int i=end_col-2;i>=start_col;i--){
@@ -36,7 +36,7 @@ int main() {
             }}
             
             //start column
-            // if(start_col != end_col){
+
             if(start_col < end_col - 1){
             for(int i=end_row-2;i>start_row;i--){
                 
